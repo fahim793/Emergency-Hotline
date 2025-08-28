@@ -19,13 +19,14 @@
 
 <body class="bg-[#00a63d10]">
 
-  <!-- Header -->
+  <!-- Header/Navbar -->
   <header>
     <nav class="flex flex-col md:flex-row justify-between items-center p-5 gap-4">
       <div class="flex items-center">
         <img class="w-15 h-15" src="assets/logo.png" alt="Logo" />
         <h1 class="font-extrabold text-xl ml-3 text-[#006747]">
-          Emergency <br class="hidden md:block" /> Service
+          Emergency <br class="hidden md:block" />
+          Service
         </h1>
       </div>
 
@@ -50,11 +51,12 @@
       <div class="flex flex-col my-10 items-center text-center">
         <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="Logo Dark" />
         <h1 class="text-white font-bold text-2xl my-2">Emergency Service Directory</h1>
-        <p class="text-white">Government Emergency Services at Your Fingertip – A Project by Government of Bangladesh.
-        </p>
+        <p class="text-white">Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh.</p>
       </div>
     </section>
   </header>
+
   <!-- Main Section -->
   <main class="p-4">
     <section class="grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -298,7 +300,22 @@
 
       </div>
 
-      <script src="script.js"></script>
+      <!-- Call History Card -->
+      <div class="bg-white flex flex-col shadow-sm rounded-xl p-4 lg:col-span-1 order-2 lg:order-2">
+        <div class="flex justify-between items-center">
+          <h2 class="font-bold text-gray-600 text-xl">
+            <i class="mr-1 fa-regular fa-clock"></i>Call History
+          </h2>
+          <button id="clear-btn" class="p-2 rounded-full text-white font-semibold bg-[#00a63e] hover:bg-[#00a645e0]">
+            Clear
+          </button>
+        </div>
+        <div id="history" class="mt-5">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
