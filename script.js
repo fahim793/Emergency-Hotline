@@ -71,3 +71,27 @@ document.getElementById('clear-btn').addEventListener('click', function () {
     historyData.length = 0;
     document.getElementById('history').innerHTML = '';
 });
+
+// Copy Button Function
+let copyCounter = 0;
+const copyButtons = document.querySelectorAll(".copy-button");
+
+for (const copy of copyButtons) {
+    copy.addEventListener("click", async function () {
+        const card = copy.closest(".parent-card");
+        const numberElement = card.querySelector(".hotline-number");
+        const numberToCopy = numberElement?.innerText || "";
+
+        if (!numberToCopy) return;
+
+        try {
+            await navigator.clipboard.writeText(numberToCopy);
+            alert(`The number has been copied: ${numberToCopy}`);
+        } catch (e) {
+            alert("Copy failed!");
+        }
+
+        copyCounter++;
+        document.getElementById("copy-number").innerText = copyCounter;
+    });
+}
