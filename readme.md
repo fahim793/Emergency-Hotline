@@ -1,10 +1,10 @@
 ### 6. Answer the following questions clearly:
 
 ## 1. Difference between Selectors  
-getElementById()** → Selects one specific element by its unique `id`.  
-getElementsByClassName()** → Collects all elements that use the same class name.  
-querySelector()** → Returns only the first element that matches a CSS selector.  
-querySelectorAll()** → Returns all elements that match a CSS selector as a list.  
+getElementById() → Selects one specific element by its unique `id`.  
+getElementsByClassName() → Collects all elements that use the same class name.  
+querySelector() → Returns only the first element that matches a CSS selector.  
+querySelectorAll() → Returns all elements that match a CSS selector as a list.  
 
 ---
 
@@ -24,6 +24,6 @@ Instead of setting separate event listeners for each child, a single listener ca
 ---
 
 ## 5. Difference between preventDefault() and stopPropagation()  
-preventDefault()** → Stops the browser from performing its usual action for that element (such as a form submitting automatically).  
-stopPropagation()** → Prevents the event from traveling further up the DOM tree, meaning the bubbling process will stop at that point.  
+preventDefault() → Stops the browser from performing its usual action for that element (such as a form submitting automatically).  
+stopPropagation() → Prevents the event from traveling further up the DOM tree, meaning the bubbling process will stop at that point.  
 
