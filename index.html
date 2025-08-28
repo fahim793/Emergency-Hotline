@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Service</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-[#00a63d10]">
+  <h1 class="text-center mt-10 font-bold text-3xl text-[#006747]">Emergency Service Project</h1>
+  <body class="bg-[#00a63d10]">
+
+  <!-- Header/Navbar -->
+  <header>
+    <nav class="flex flex-col md:flex-row justify-between items-center p-5 gap-4">
+      <div class="flex items-center">
+        <img class="w-15 h-15" src="assets/logo.png" alt="Logo" />
+        <h1 class="font-extrabold text-xl ml-3 text-[#006747]">
+          Emergency <br class="hidden md:block" /> Service
+        </h1>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="flex justify-center items-center bg-[#41ff6b1a] px-8 py-2 rounded-full">
+          <span id="heart-number" class="font-extrabold mr-1">0</span>
+          <img class="md:w-8 md:h-8" src="assets/heart.png" alt="Heart" />
+        </div>
+        <div class="flex justify-center items-center bg-[#41ff6b1a] px-8 py-2 rounded-full">
+          <span id="coins" class="font-extrabold mr-1">100</span>
+          <img class="md:w-8 md:h-8" src="assets/coin.png" alt="Coin" />
+        </div>
+        <div class="text-white flex justify-center items-center font-bold bg-[#00a63e] px-8 py-2 rounded-full">
+          <span id="copy-number" class="mr-1">0</span>
+          <h1>Copy</h1>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-6 bg-gradient-to-r from-[rgba(1,49,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)]">
+      <div class="flex flex-col my-10 items-center text-center">
+        <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="Logo Dark" />
+        <h1 class="text-white font-bold text-2xl my-2">Emergency Service Directory</h1>
+        <p class="text-white">Government Emergency Services at Your Fingertip – A Project by Government of Bangladesh.</p>
+      </div>
+    </section>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
