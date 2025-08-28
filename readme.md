@@ -1,5 +1,4 @@
 ### 6. Answer the following questions clearly:
-# JavaScript DOM & Events — Quick Notes
 
 ## 1. Difference between Selectors  
 - **getElementById()** → Selects one specific element by its unique `id`.  
